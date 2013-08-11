@@ -1,0 +1,4 @@
+#ifndef GAMESTATE_E
+#define GAMESTATE_E
+enum GameState {STARTSCREEN, GAMERUNNING, DEAD};
+#endif

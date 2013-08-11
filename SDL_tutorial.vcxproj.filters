@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Snake">
+      <UniqueIdentifier>{72df343f-ab71-4948-ac1e-5fe31c3d3c04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Bouncing Balls">
+      <UniqueIdentifier>{0872891a-f977-42e3-90f7-1e78df087e06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Globals">
+      <UniqueIdentifier>{28bbbe08-1a12-4c1f-befc-f45623ecad31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Bouncing Balls">
+      <UniqueIdentifier>{4eeadd4b-420d-4789-b8e1-0d4d8df45711}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Globals">
+      <UniqueIdentifier>{b3e5f3c3-ca3a-4faa-8b71-a12841a11eb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Snake">
+      <UniqueIdentifier>{3892c290-b68b-4d91-b868-24703e51d2e0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tut2and3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tut1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tut4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tut5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tut6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tut7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tut8.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tut9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tut10.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tut11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tut12.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tut13.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tut14.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tut15.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tut16.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sandbox.cpp">
+      <Filter>Source Files\Bouncing Balls</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\Bouncing Balls</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\Bouncing Balls</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Source Files\Bouncing Balls</Filter>
+    </ClCompile>
+    <ClCompile Include="pSnakeSegment.cpp">
+      <Filter>Source Files\Snake</Filter>
+    </ClCompile>
+    <ClCompile Include="pCollectible.cpp">
+      <Filter>Source Files\Snake</Filter>
+    </ClCompile>
+    <ClCompile Include="pSnake.cpp">
+      <Filter>Source Files\Snake</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Source Files\Globals</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionTester.cpp">
+      <Filter>Source Files\Globals</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>Source Files\Globals</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Source Files\Globals</Filter>
+    </ClCompile>
+    <ClCompile Include="Direction.h">
+      <Filter>Header Files\Snake</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files\Snake</Filter>
+    </ClCompile>
+    <ClCompile Include="Snake.cpp">
+      <Filter>Source Files\Snake</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Enemy.h">
+      <Filter>Header Files\Bouncing Balls</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files\Bouncing Balls</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files\Bouncing Balls</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionTester.h">
+      <Filter>Header Files\Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Header Files\Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Header Files\Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>Header Files\Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="pSnakeSegment.h">
+      <Filter>Header Files\Snake</Filter>
+    </ClInclude>
+    <ClInclude Include="Snake.h">
+      <Filter>Header Files\Snake</Filter>
+    </ClInclude>
+    <ClInclude Include="pSnake.h">
+      <Filter>Header Files\Snake</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>Header Files\Snake</Filter>
+    </ClInclude>
+    <ClInclude Include="pCollectible.h">
+      <Filter>Header Files\Snake</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="player_sprite.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
