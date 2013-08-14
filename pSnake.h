@@ -7,10 +7,11 @@ public:
 	pSnake();
 	std::list<pSnakeSegment> segments; //segments of the snake
 	SDL_Surface* segment_sprite;
+	Direction direction;
 
-	void update(Direction); // update snake based on direction
+	void update(); // update snake based on direction
 	void move(); // move snake
-	void handle_input(SDL_Event*); //update snake based on user input
+	bool handle_input(SDL_Event*); //update snake based on user input; if something changes return true
 	bool is_colliding(); // is the snake colliding with itself?
 	void add_segment();
 	void draw(SDL_Surface*);

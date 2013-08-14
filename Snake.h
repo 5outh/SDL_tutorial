@@ -30,15 +30,20 @@ public:
 	SDL_Event event; // event structure
 
 	SDL_Surface* screen; // main screen to draw to
+	SDL_Surface* start_screen;
+	SDL_Surface* death_screen;
 	SDL_Surface* plr_sprite;
+	SDL_Surface* background;
 
 	bool init(); //initialize everything
 	void place_collectible(); //add a new collectible
 
+	void setup_game(); // set up the game for playing
 	bool is_touching_collectible(); // check if snake is touching a collectible
 	bool snake_in_bounds();
 	void draw_game(); //draw game based on current state; this is poor design but for such a small project it's fine I think
 	void update_game();
 	void run_tick();
+	void clean_up();
 	void main_loop();
 };

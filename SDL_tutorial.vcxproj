@@ -84,21 +84,6 @@
     <ClCompile Include="Sandbox.cpp" />
     <ClCompile Include="Snake.cpp" />
     <ClCompile Include="Timer.cpp" />
-    <ClCompile Include="tut1.cpp" />
-    <ClCompile Include="tut10.cpp" />
-    <ClCompile Include="tut11.cpp" />
-    <ClCompile Include="tut12.cpp" />
-    <ClCompile Include="tut13.cpp" />
-    <ClCompile Include="tut14.cpp" />
-    <ClCompile Include="tut15.cpp" />
-    <ClCompile Include="tut16.cpp" />
-    <ClCompile Include="tut2and3.cpp" />
-    <ClCompile Include="tut4.cpp" />
-    <ClCompile Include="tut5.cpp" />
-    <ClCompile Include="tut6.cpp" />
-    <ClCompile Include="tut7.cpp" />
-    <ClCompile Include="tut8.cpp" />
-    <ClCompile Include="tut9.cpp" />
     <ClCompile Include="Vector2.cpp" />
   </ItemGroup>
   <ItemGroup>

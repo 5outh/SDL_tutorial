@@ -3,6 +3,8 @@
 #include <sstream>
 
 pSnake::pSnake(){
+
+	direction = RIGHT;
 	pSnakeSegment segment;
 
 	segment.direction = RIGHT;
@@ -18,26 +20,29 @@ pSnake::pSnake(){
 	segment_sprite = NULL; //set in snake class, for some reason this doesn't really work.
 }
 
-void pSnake::handle_input(SDL_Event* e){
+bool pSnake::handle_input(SDL_Event* e){
+	OutputDebugString("Handle input called.\n");
 	if(e->type == SDL_KEYDOWN){
 		switch(e->key.keysym.sym){
-			case SDLK_UP: update(UP); break;
-			case SDLK_DOWN: update(DOWN); break;
-			case SDLK_LEFT: update(LEFT); break;
-			case SDLK_RIGHT: update(RIGHT); break;
+			case SDLK_UP: direction = UP; return true; break;
+			case SDLK_DOWN: direction = DOWN; return true; break;
+			case SDLK_LEFT: direction = LEFT; return true; break;
+			case SDLK_RIGHT: direction = RIGHT; return true; break;
+			default: return false;
 		}
 	}
 }
 
 //this definitely works correctly
-void pSnake::update(Direction d){
+void pSnake::update(){
+	OutputDebugString("Update called.\n");
 	std::list<Direction> directions;
 
 	for(std::list<pSnakeSegment>::iterator it = segments.begin(); it != segments.end(); it++){ //collect directions of segments
 		directions.push_back(it->direction);
 	}
 
-	directions.push_front(d); //change front direction and shift the rest one back
+	directions.push_front(direction); //change front direction and shift the rest one back
 	directions.pop_back();
 
 	for(std::list<pSnakeSegment>::iterator it = segments.begin(); it != segments.end(); it++){
@@ -48,12 +53,14 @@ void pSnake::update(Direction d){
 }
 
 void pSnake::move(){ //ALTERNATIVE to add_segment
+	OutputDebugString("Move called.\n");
 	for(std::list<pSnakeSegment>::iterator it = segments.begin(); it != segments.end(); it++){
 		it->move(); //move each segment based on it's individual direction
 	}
 }
 
 void pSnake::add_segment(){ //ALTERNATIVE to move()
+	OutputDebugString("Add Segment called.\n");
 	pSnakeSegment back = segments.back(); //last segment
 	pSnakeSegment back_cpy;
 
